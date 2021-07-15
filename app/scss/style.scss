@@ -161,11 +161,12 @@
   
 }
 .aboutme__left {
-  margin-right: 20px;
+  
   
 }
 .aboutme__left-img{
   max-width: 400px;
+ 
  
   
   
@@ -173,6 +174,7 @@
   opacity: 0.8;
 }
 .aboutme__right {
+  margin-left: 20px;
 }
 .aboutme__info {
   max-width: 600px;
@@ -712,6 +714,20 @@
 
 
 @media(max-width: 866px){
+  .aboutme__left{
+    display: none;
+  }
+  .aboutme__right {
+  margin-left: 0px;
+}
+  .aboutme__left{
+    margin-left: 0;
+  }
+  .aboutme__left-img{
+    object-fit: cover;
+    max-width: 300px;
+    margin:  0 auto;
+  }
   .aboutme__inner{
     flex-wrap: wrap;
     justify-content: center;
@@ -871,7 +887,7 @@
   right:0;
 }
 .menu-btn{
-  position: absolute;
+  position: fixed;
   z-index: 200;
   right: 10px;
   
@@ -979,13 +995,7 @@ input[type="checkbox"]{
   color: rgb(168, 167, 167);
 }
 
-.fio{
-  font-size: 18px;
-  color:#000;
-  text-align: left;
-  text-align: center;
-  width: 200px;
-}
+
 
   
 }
